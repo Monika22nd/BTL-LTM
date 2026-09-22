@@ -38,7 +38,7 @@ java -version
 javac -version
 ```
 
-## Demo nhanh toan bo de tai
+## Quick Test Everything
 
 Mo PowerShell tai thu muc project va chay:
 
@@ -61,7 +61,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 .\scripts\demo-all.ps1
 ```
 
-## Demo thu cong tren lop
+## Test Each thread
 
 Can hai cua so PowerShell cung mo tai thu muc project.
 
@@ -143,24 +143,4 @@ Tai terminal khac:
 
 ```powershell
 java -cp out LoadTestClient --url=http://localhost:8080/sleep?ms=100 --requests=20 --concurrency=10 --warmup=2
-```
-
-## Day code len GitHub
-
-Tao mot repository rong tren GitHub, khong chon tao san README. Sau do chay:
-
-```powershell
-git add .
-git commit -m "Add T45 Java multithreading demo"
-git branch -M main
-git remote add origin https://github.com/TEN_GITHUB/TEN_REPOSITORY.git
-git push -u origin main
-```
-
-Thay `TEN_GITHUB` va `TEN_REPOSITORY` bang thong tin cua ban.
-
-Neu repository da co remote `origin`, khong chay lai `git remote add`; kiem tra bang:
-
-```powershell
-git remote -v
 ```
