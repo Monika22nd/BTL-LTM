@@ -1,0 +1,6 @@
+out/
+results/
+tmp/
+.idea/
+*.iml
+.vscode/
